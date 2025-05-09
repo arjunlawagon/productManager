@@ -1,12 +1,26 @@
-# React + Vite
+# React + Vite - Product Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with Hot Module Replacement (HMR) and some ESLint rules. The app demonstrates a basic product management system with features to manage products' names and quantities.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Product Maintenance
+- **Create** and **update** product name, quantity, etc.
 
-## Expanding the ESLint configuration
+### Product Listing
+- Display a list of products showing their **name** and **quantity**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Extra Logic
+1. **Quantity Management**:
+    - Increase or decrease product quantity (minimum value of 0).
+
+2. **Product Removal**:
+    - A product can be removed from the list when its quantity reaches 0.
+
+## Styling
+
+The application uses **React Bootstrap** for basic styling, including buttons and alerts. You can choose to replace it with **Material UI** or **Tailwind CSS** if needed.
+
+## React Hook Design Pattern
+
+The application follows the **React Hook design pattern**, utilizing the `useState` and `useEffect` hooks to manage state and side effects, respectively. The app is built without class components to provide a modern, functional approach to React development.
