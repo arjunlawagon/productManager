@@ -1,6 +1,6 @@
 # React + Vite - Product Management App
 
-This template provides a minimal setup to get React working in Vite with Hot Module Replacement (HMR) and some ESLint rules. The app demonstrates a basic product management system with features to manage products' names and quantities.
+The app demonstrates a basic product management system with features to manage products' names and quantities.
 
 ## Features
 
