@@ -22,3 +22,4 @@ Uses **React Bootstrap** for basic styling, with striped table, buttons amd aler
 
 ## React Hook Design Pattern
 The code demontrates basic use of `useState` and `useEffect` hooks in order to manage the states and effect.
+Project structure is created using Vite.
