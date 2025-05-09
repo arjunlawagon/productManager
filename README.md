@@ -18,7 +18,7 @@ The app is a basic product management system with features to manage products' n
     - product can be deleted when quantity = 0.
 
 ## Styling
-Uses **React Bootstrap** for basic styling, with buttons amd alerts.
+Uses **React Bootstrap** for basic styling, with striped table, buttons amd alerts on add/update/delete.
 
 ## React Hook Design Pattern
 The code demontrates basic use of `useState` and `useEffect` hooks in order to manage the states and effect.
