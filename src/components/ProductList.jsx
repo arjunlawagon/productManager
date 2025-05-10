@@ -8,9 +8,9 @@ function ProductList({products, onQuantityChange, onDelete}) {
           <table className="table table-striped" >
               <thead>
               <tr>
-                  <th style={{ width: '200px' }}>Product Name</th>
-                  <th style={{ width: '100px' }}>Quantity</th>
-                  <th style={{ width: '150px' }}>Actions</th>
+                  <th style={{ width: '50%' }}>Product Name</th>
+                  <th style={{ width: '15%' }}>Quantity</th>
+                  <th style={{ width: '35%' }}>Actions</th>
               </tr>
               </thead>
               <tbody>
