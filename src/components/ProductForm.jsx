@@ -43,9 +43,15 @@ function ProductForm(props) {
           <Form.Control
               type="number"
               min="0"
+              placeholder="0"
               value={quantity}
               onChange={function (event) {
                 setQuantity(event.target.value);
+              }}
+              onFocus={function (event) {
+                  if (event.target.value === '0') {
+                      event.target.value = ' ';
+                  }
               }}
           />
         </Form.Group>
