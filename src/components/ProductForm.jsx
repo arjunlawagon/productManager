@@ -50,7 +50,7 @@ function ProductForm(props) {
               }}
               onFocus={function (event) {
                   if (event.target.value === '0') {
-                      event.target.value = ' ';
+                      event.target.value = '';
                   }
               }}
           />
