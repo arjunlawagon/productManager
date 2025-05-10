@@ -1,0 +1,62 @@
+
+:root {
+    --primary-color: #ffc83d;
+    --secondary-color: #3498db;
+    --success-color: #2ecc71;
+    --warning-color: #d8c04a;
+    --danger-color: #e74c3c;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: black !important;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table thead th {
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}

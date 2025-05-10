@@ -24,7 +24,7 @@ function ProductForm(props) {
   }
 
   return (
-      <Form onSubmit={handleSubmit} className="mb-4">
+      <Form onSubmit={handleSubmit} className="mb-4 card p-4">
         <Form.Group className="mb-3">
           <Form.Label>Product Name:</Form.Label>
           <Form.Control
@@ -50,7 +50,9 @@ function ProductForm(props) {
           />
         </Form.Group>
 
-        <Button type="submit" variant="primary">Save Product</Button>
+        <Button type="submit" variant="primary" className="save-product-btn">
+            <i className="bi bi-floppy"></i> Save Product
+        </Button>
       </Form>
   );
 }

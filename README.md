@@ -19,7 +19,7 @@ The app is a basic product management system with features to manage products' n
 
 
 ## Styling
-Uses **React Bootstrap** for basic styling, with striped table, buttons amd alerts on add/update/delete.
+Uses **React Bootstrap** and css for basic styling, with striped table, buttons amd alerts on add/update/delete.
 
 ## React Hook Design Pattern
 The code demontrates basic use of `props`, `useState` and `useEffect` hooks to manage the states and effect.

@@ -84,12 +84,12 @@ function App() {
 
     return (
         <div>
-            <nav className="navbar bg-body-tertiary">
+            <nav className="navbar">
                 <div className="container-fluid">
                     <span className="navbar-brand mb-0 h1">Product Manager</span>
                 </div>
             </nav>
-            <Container className="mt-4">
+            <Container className="mt-5">
 
                 <ProductForm onSubmit={addOrUpdateProduct}/>
                 <div>
