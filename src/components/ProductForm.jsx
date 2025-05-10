@@ -26,7 +26,7 @@ function ProductForm(props) {
   return (
       <Form onSubmit={handleSubmit} className="mb-4">
         <Form.Group className="mb-3">
-          <Form.Label>Product Name</Form.Label>
+          <Form.Label>Product Name:</Form.Label>
           <Form.Control
               type="text"
               placeholder="Enter product name"
@@ -39,7 +39,7 @@ function ProductForm(props) {
         </Form.Group>
 
         <Form.Group className="mb-3">
-          <Form.Label>Quantity</Form.Label>
+          <Form.Label>Quantity:</Form.Label>
           <Form.Control
               type="number"
               min="0"

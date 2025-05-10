@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import ProductForm from './components/ProductForm';
 import ProductList from './components/ProductList';
 import AlertMsg from './components/AlertMsg.jsx';
+import { Navbar } from 'react-bootstrap';
 
 function App() {
     const [products, setProducts] = useState([]);
@@ -82,19 +83,26 @@ function App() {
 
 
     return (
-        <Container className="mt-4">
-            <h2>Product Manager</h2>
-            <ProductForm onSubmit={addOrUpdateProduct} />
-            <div>
-                {alertMessage && (
-                   <AlertMsg
-                    alertVariant={alertVariant}
-                    alertMessage={alertMessage}
-                    />
-                )}
-            </div>
-            <ProductList products={products} onQuantityChange={changeQuantity} onDelete={deleteProduct} />
-        </Container>
+        <div>
+            <nav className="navbar bg-body-tertiary">
+                <div className="container-fluid">
+                    <span className="navbar-brand mb-0 h1">Product Manager</span>
+                </div>
+            </nav>
+            <Container className="mt-4">
+
+                <ProductForm onSubmit={addOrUpdateProduct}/>
+                <div>
+                    {alertMessage && (
+                        <AlertMsg
+                            alertVariant={alertVariant}
+                            alertMessage={alertMessage}
+                        />
+                    )}
+                </div>
+                <ProductList products={products} onQuantityChange={changeQuantity} onDelete={deleteProduct}/>
+            </Container>
+        </div>
     );
 }
 
