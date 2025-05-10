@@ -10,7 +10,7 @@ function ProductList({products, onQuantityChange, onDelete}) {
               <tr>
                   <th style={{ width: '200px' }}>Product Name</th>
                   <th style={{ width: '100px' }}>Quantity</th>
-                  <th style={{ width: '150px' }}>Action</th>
+                  <th style={{ width: '150px' }}>Actions</th>
               </tr>
               </thead>
               <tbody>
