@@ -18,17 +18,18 @@ function ProductItem(props) {
   }
 
   return (
-          <tr>
+          <tr key={props.product.name}
+              className={props.highlight.product === props.product.name ? `highlight-row-${props.highlight.type}` : ''}>
               <td>{props.product.name}</td>
               <td>{props.product.quantity.toLocaleString()}</td>
               <td>
                   <ButtonGroup>
                       <Button variant="warning" onClick={decreaseQuantity} >
-                          <i className="bi bi-dash-circle"></i>
+                          <i className="bi bi-dash-circle "></i>
                       </Button>
 
                       <Button variant="success" onClick={increaseQuantity}><i
-                          className="bi bi-plus-circle"></i>
+                          className="bi bi-plus-circle "></i>
                       </Button>
                   </ButtonGroup>
 

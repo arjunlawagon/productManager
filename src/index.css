@@ -49,6 +49,7 @@ body {
 .btn {
     border-radius: 6px;
     padding: 8px 16px;
+
 }
 
 .form-control {
@@ -60,3 +61,86 @@ body {
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
 }
+
+
+
+@keyframes highlightRowAdd {
+    0% {
+        background-color: rgba(46, 204, 113, 0.3);
+    }
+
+    50% {
+        background-color: rgba(46, 204, 113, 0.3);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes highlightRowUpdate {
+    0% {
+        background-color: rgba(28, 145, 218, 0.3);
+    }
+
+    50% {
+        background-color: rgba(28, 145, 218, 0.3);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes highlightRowIncrease {
+    0% {
+        background-color: rgba(46, 204, 113, 0.3);
+    }
+
+    50% {
+        background-color: rgba(46, 204, 113, 0.3);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes highlightRowDecrease {
+    0% {
+        background-color: rgba(243, 156, 18, 0.3);
+    }
+
+    50% {
+        background-color: rgba(243, 156, 18, 0.3);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+
+.highlight-row-add {
+    animation: highlightRowAdd 2s ease
+}
+
+.highlight-row-increase {
+    animation: highlightRowIncrease 2s ease;
+}
+
+.highlight-row-update {
+    animation: highlightRowUpdate 2s ease
+}
+
+.highlight-row-decrease {
+    animation: highlightRowDecrease 2s ease;
+}
+
+tr.highlight-row-add td,
+tr.highlight-row-update td,
+tr.highlight-row-increase td,
+tr.highlight-row-decrease td {
+    background-color: transparent !important;
+}
+

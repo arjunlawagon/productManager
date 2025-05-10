@@ -2,7 +2,8 @@ import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ProductItem from './ProductItem';
 
-function ProductList({products, onQuantityChange, onDelete}) {
+function ProductList({products, onQuantityChange, onDelete, highlight,}) {
+
   return (
       <div>
           <table className="table table-striped" >
@@ -25,6 +26,7 @@ function ProductList({products, onQuantityChange, onDelete}) {
                           product={product}
                           onQuantityChange={onQuantityChange}
                           onDelete={onDelete}
+                          highlight={highlight}
                       />
                   ))
               )}
