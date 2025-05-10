@@ -97,6 +97,7 @@ function App() {
                         <AlertMsg
                             alertVariant={alertVariant}
                             alertMessage={alertMessage}
+                            onDismiss={() => setAlertMessage('')}
                         />
                     )}
                 </div>
